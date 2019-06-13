@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "audiowide";
+  src: url("../../assets/fonts/audiowide.ttf") format('ttf'),
+    url("../../assets/fonts/audiowide.woff") format('woff'),
+    url("../../assets/fonts/audiowide.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nav-color {
+  background-image: linear-gradient(to right, rgba(135,206,235,0), rgba(135,206,235,1));
+}
+
+.brand-name {
+  font-family: 'audiowide';
+}

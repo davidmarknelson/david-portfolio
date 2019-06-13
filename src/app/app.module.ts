@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
+// Modules
+import { NavbarModule } from './navbar/navbar.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { library } from '@fortawesome/fontawesome-svg-core';
     BrowserModule,
     AppRoutingModule,
     // Font Awesome
-    FontAwesomeModule
+    FontAwesomeModule,
+    // Modules
+    NavbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
