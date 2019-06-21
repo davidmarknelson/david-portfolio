@@ -1,5 +1,16 @@
+.title-text {
+  background:#fff;
+  padding: 0 5px;
+}
+
+.title-line {
+  border-bottom: 1px solid #09204A;
+  height: 30px;
+  margin-bottom: 140px;
+}
+
 .button {
-  background-color: #23C7BF;
+  background-color: #77dd77;
   color: #09204A;
   border: none;
   -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
@@ -10,12 +21,12 @@
 }
 
 /* 
-pastel green - 77dd77
-accessible sea green - 23C7BF
+pastel green - 77dd77 -> dark 32C832
+accessible sea green - 23C7BF -> light 91EDE5
 */
 
 .button:hover {
-  background-color: #91EDE5;
+  background-color: #32C832;
 }
 
 fa-icon {
@@ -23,7 +34,7 @@ fa-icon {
 }
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 75px;
 }
 
 .project-image {
