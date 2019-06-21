@@ -2,25 +2,35 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+// Components
 import { AppComponent } from './app.component';
+import { ContactComponent } from './portfolio/contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ProjectsComponent } from './portfolio/projects/projects.component';
+import { SkillsComponent } from './portfolio/skills/skills.component';
 // Font Awesome
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-// Modules
-import { NavbarModule } from './navbar/navbar.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContactComponent,
+    FooterComponent,
+    NavbarComponent,
+    PortfolioComponent,
+    ProjectsComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     // Font Awesome
-    FontAwesomeModule,
-    // Modules
-    NavbarModule
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -28,6 +38,6 @@ import { NavbarModule } from './navbar/navbar.module';
 export class AppModule {
   constructor() {
     // Font Awesome
-    library.add(faCoffee);
+    library.add(faExternalLinkAlt, faGithub, faFileDownload);
   }
 }

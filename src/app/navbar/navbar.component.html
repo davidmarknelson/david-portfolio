@@ -1,9 +1,10 @@
-<nav class="navbar nav-color" role="navigation" aria-label="main navigation">
+<nav class="navbar nav-background is-fixed-top nav-shadow" role="navigation" aria-label="main navigation" id="navbar">
   <div class="navbar-brand">
-    <div class="navbar-item brand-name">
+    <a class="font-audiowide navbar-item brand-name"  (click)="scrollToElement('#bannerTop')">
       David Nelson
-    </div>
-    <a role="button" class="navbar-burger burger" aria-label="menu" 
+    </a>
+
+    <a role="button" class="navbar-burger burger nav-link" aria-label="menu" 
         aria-expanded="false" data-target="navbarItems" 
         (click)='expandMenu()' [class.is-active]='expandedMenu'>
       <span aria-hidden="true"></span>
@@ -12,21 +13,22 @@
     </a>
   </div>
 
-  <div id="navbarItems" class="navbar-menu" [class.is-active]='expandedMenu'>
+  <div id="navbarItems" class="navbar-menu" [class.is-active]='expandedMenu' [class.nav-background]='expandedMenu'>
     <div class="navbar-start">
-      <a class="navbar-item">
+      <a class="navbar-item nav-link" (click)="scrollToElement('#projects')">
         Projects
       </a>
 
-      <a class="navbar-item">
+      <a class="navbar-item nav-link" (click)="scrollToElement('#skills')">
         Skills
       </a>
 
-      <a class="navbar-item">
+      <a class="navbar-item nav-link" (click)="scrollToElement('#contact')">
         Contact
       </a>
 
-      <a class="navbar-item">
+      <a class="navbar-item nav-link">
+        <fa-icon [icon]="['fas', 'file-download']"></fa-icon>
         Resume
       </a>
     </div>

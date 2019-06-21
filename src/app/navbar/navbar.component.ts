@@ -14,7 +14,12 @@ export class NavbarComponent implements OnInit {
     this.expandedMenu = false;
   }
 
-  expandMenu() {
+  expandMenu(): void {
     this.expandedMenu = !this.expandedMenu;
+  }
+
+  scrollToElement(id: string): void {
+    let element = document.querySelector(id);
+    element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 }

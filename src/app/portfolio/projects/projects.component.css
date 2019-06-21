@@ -1,0 +1,63 @@
+.button {
+  background-color: #23C7BF;
+  color: #09204A;
+  border: none;
+  -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
+  transition: background-color 200ms ease-out;
+  transition: color 200ms ease-out;
+}
+
+/* 
+pastel green - 77dd77
+accessible sea green - 23C7BF
+*/
+
+.button:hover {
+  background-color: #91EDE5;
+}
+
+fa-icon {
+  margin-right: 5px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.project-image {
+  margin: 0 3px;
+  border-radius: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0;
+}
+
+.project-body {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
+}
+
+.rounded-corners {
+  border-radius: 10px;
+}
+
+.title-margin {
+  margin-top: 24px;
+}
+
+.project-body-margin {
+  margin-bottom: 12px;
+}
+
+strong {
+  color: #09204A;
+}
