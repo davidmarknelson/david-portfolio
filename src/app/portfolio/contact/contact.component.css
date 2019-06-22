@@ -1,0 +1,10 @@
+.title-text {
+  background:#fff;
+  padding: 0 5px;
+}
+
+.title-line {
+  border-bottom: 1px solid #09204A;
+  height: 30px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,22 @@
+.title-text {
+  background:#fff;
+  padding: 0 5px;
+}
+
+.title-line {
+  border-bottom: 1px solid #09204A;
+  height: 30px;
+  margin-bottom: 30px;
+}
+
+.column h1 {
+  font-size: 1.6em;
+  font-weight: 600;
+  line-height: 1.125;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-bottom: 20px;
+}

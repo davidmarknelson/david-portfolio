@@ -66,4 +66,28 @@ describe('NavbarComponent', () => {
     const navbarItems = fixture.debugElement.query(By.css('#navbarItems'));
     expect(navbarItems.nativeElement.classList).toContain('nav-background');
   });
+
+  it('should call function that scrolls to the projects section when link is clicked', () => {
+    const projectsBtn = fixture.debugElement.query(By.css('[data-target=projects]'));
+    spyOn(component, 'scrollToElement').and.callFake(() => {});
+    projectsBtn.nativeElement.click();
+    fixture.detectChanges();
+    expect(component.scrollToElement).toHaveBeenCalled();
+  });
+
+  it('should call function that scrolls to the skills section when link is clicked', () => {
+    const projectsBtn = fixture.debugElement.query(By.css('[data-target=skills]'));
+    spyOn(component, 'scrollToElement').and.callFake(() => {});
+    projectsBtn.nativeElement.click();
+    fixture.detectChanges();
+    expect(component.scrollToElement).toHaveBeenCalled();
+  });
+
+  it('should call function that scrolls to the contact section when link is clicked', () => {
+    const projectsBtn = fixture.debugElement.query(By.css('[data-target=contact]'));
+    spyOn(component, 'scrollToElement').and.callFake(() => {});
+    projectsBtn.nativeElement.click();
+    fixture.detectChanges();
+    expect(component.scrollToElement).toHaveBeenCalled();
+  });
 });
