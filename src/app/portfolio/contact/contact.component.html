@@ -1,7 +1,81 @@
-<section class="section">
-    <div class="container">
-      <h1 id="contact" class="body-font-color title has-text-centered is-size-1 title-line">
-        <span class="title-text">Contact</span>
-      </h1>
+<section class="section" id="contact">
+  <div class="container">
+    <h1 class="body-font-color title has-text-centered is-size-1 title-line">
+      <span class="title-text">Contact</span>
+    </h1>
+  </div>
+</section>
+
+<section class="has-text-centered section">
+  <div class="container">
+    <h1 class="title">Contact me by...</h1>
+    <div class="columns">
+      <div class="column">
+        <h3 class="subtitle">email</h3>
+        <a href='mailto:nelsondavidmark@gmail.com'  class="contact-icons" target="_blank">
+          <fa-icon [icon]="['fas', 'envelope']" size="3x"></fa-icon>
+        </a>
+      </div>
+      <div class="column">
+        <h3 class="subtitle">Github</h3>
+        <a href='https://github.com/dnel9281' class="contact-icons" target="_blank">
+          <fa-icon [icon]="['fab', 'github-square']" size="3x"></fa-icon>
+        </a>
+      </div>
+      <div class="column">
+        <h3 class="subtitle">Linkedin</h3>
+        <a href='https://www.linkedin.com/in/david-nelson-dnel9281' class="contact-icons" target="_blank">
+          <fa-icon [icon]="['fab', 'linkedin']" size="3x"></fa-icon>
+        </a>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h1 class="has-text-centered or-line">
+      <span class="or-text">or</span>
+    </h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate class="field contact-form">
+      <label class="label">
+        Your Name:
+        <div class="control has-icons-left">
+          <input class="input is-rounded" type="text" formControlName="name" placeholder="John Smith">
+          <span class="icon is-left">
+            <fa-icon [icon]="['fas', 'user']"></fa-icon>
+          </span>
+        </div>
+      </label>
+    
+      <label class="label">
+        Your Email:
+        <div class="control has-icons-left">
+          <input class="input is-rounded" type="email" formControlName="email"  placeholder="abc@email.com">
+          <span class="icon is-left">
+            <fa-icon [icon]="['fas', 'envelope']"></fa-icon>
+          </span>
+        </div>
+      </label>
+    
+      <label class="label">
+        Your Message:
+        <div class="control">
+          <textarea class="textarea" placeholder="Hello, World!" formControlName="message"></textarea>
+        </div>
+      </label>
+    
+      <div class="control">
+        <button class="button is-rounded" type="submit" [disabled]="!contactForm.valid">
+          Send Message
+          <fa-icon [icon]="['fas', 'paper-plane']" size="xs" class="icon-plane"></fa-icon>
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
