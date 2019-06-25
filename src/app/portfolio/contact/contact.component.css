@@ -1,14 +1,23 @@
+/* Text styles */
+h3, label {
+  color: #09204A;
+}
+
+/* Component title styles */
 .title-text {
   background:#fff;
   padding: 0 5px;
+  color: #09204A;
 }
 
 .title-line {
   border-bottom: 1px solid #09204A;
   height: 30px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
+/* Or sections divider */
 .or-text {
   background:#fff;
   padding: 0 5px;
@@ -21,12 +30,42 @@
   height: 29px;
   margin: 0 auto 15px auto;
   max-width: 700px;
+  text-align: center;
 }
 
-.icon-plane {
-  margin-left: 5px;
+/* Contact icons and text */
+.contact-group {
+  text-align: center;
 }
 
+.contact-icons {
+  color: #77dd77;
+  transition: background-color 200ms ease-out;
+  transition: color 200ms ease-out;
+}
+
+.contact-icons:hover {
+color: #32C832;
+}
+
+/* Contact form */
+.contact-form {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  margin-bottom: 150px;
+}
+
+textarea {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Contact form buttons */
 .button {
   background-color: #77dd77;
   color: #09204A;
@@ -49,28 +88,6 @@
   box-shadow: none;
 }
 
-.contact-form {
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-form {
-  margin-bottom: 150px;
-}
-
-.contact-icons {
-  color: #77dd77;
-  transition: background-color 200ms ease-out;
-  transition: color 200ms ease-out;
-}
-
-.contact-icons:hover {
-color: #32C832;
-}
-
-textarea {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+.icon-plane {
+  margin-left: 5px;
 }
