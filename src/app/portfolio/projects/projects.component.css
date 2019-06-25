@@ -28,14 +28,42 @@ section {
 .project-image {
   margin: 0 3px;
   border-radius: 10px;
+  transition: color 200ms ease-out;
 }
 
-.rounded-corners {
+.project-image:hover {
+  cursor: pointer;
+}
+
+.project-image:hover .img-icon,
+.project-image:hover .air3-img-icon {
+  color: #6bd9eb;
+}
+
+.base-img {
   border-radius: 10px;
+  transition: filter 200ms ease-out;
+}
+
+.base-img:hover {
+  filter: grayscale(100%);
+}
+
+.img-icon {
+  position: absolute;
+  color: #09204A;
+  bottom: 3px;
+  right: 3px;
+}
+
+.air3-img-icon {
+  position: absolute;
+  color: #fff;
+  bottom: 3px;
+  right: 3px;
 }
 
 /* Buttons and icons */
-
 .button-container {
   display: flex;
   justify-content: space-evenly;
@@ -78,3 +106,18 @@ fa-icon {
 .project-body-margin {
   margin-bottom: 12px;
 }
+
+/* Modal styles */
+.modal-resize {
+  width: auto;
+  margin: 0 20px;
+  max-height: calc(100vh - 40px);
+}
+
+.modal-img {
+  max-height: calc(100vh - 50px);
+}
+
+/* .test {
+  transition: flex 300ms ease-out;
+} */

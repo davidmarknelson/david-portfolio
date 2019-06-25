@@ -18,13 +18,33 @@
         <!-- images -->
         <div class="columns is-mobile is-gapless">
           <div class="column">
-            <figure class="image is-5by3 project-image">
-              <img src="../../../assets/images/projects/air-koalaty-report-pic.jpeg" alt="Image of Air KOALAty Report" class="rounded-corners">
+            <!-- portfolio image modal 1 -->
+            <div class="modal" [class.is-active]="showModal['portfolio1']">
+              <div class="modal-background" (click)="toggleModal('portfolio1')"></div>
+              <div class="modal-content modal-resize">
+                <img src="../../../assets/images/projects/air-koalaty-report-pic.jpeg" alt="Image of air-koalaty-report" class="modal-img">
+              </div>
+              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('portfolio1')"></button>
+            </div>
+            <!-- portfolio image 1 -->
+            <figure class="image is-5by3 project-image" (click)="toggleModal('portfolio1')">
+              <img src="../../../assets/images/projects/air-koalaty-report-pic.jpeg" alt="Image of Air KOALAty Report" class="base-img">
+              <fa-icon [icon]="['fas', 'expand']" class="img-icon"></fa-icon>
             </figure>
           </div>
           <div class="column">
-            <figure class="image is-5by3 project-image">
-              <img src="../../../assets/images/projects/air-koalaty-report-pic.jpeg" alt="Image of Air KOALAty Report" class="rounded-corners">
+            <!-- portfolio image modal 2 -->
+            <div class="modal" [class.is-active]="showModal['portfolio2']">
+              <div class="modal-background" (click)="toggleModal('portfolio2')"></div>
+              <div class="modal-content modal-resize">
+                <img src="../../../assets/images/projects/poke-survey-p1.jpeg" alt="Image of air-koalaty-report" class="modal-img">
+              </div>
+              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('portfolio2')"></button>
+            </div>
+            <!-- portfolio image 2 -->
+            <figure class="image is-5by3 project-image" (click)="toggleModal('portfolio2')">
+              <img src="../../../assets/images/projects/air-koalaty-report-pic.jpeg" alt="Image of Air KOALAty Report" class="base-img">
+              <fa-icon [icon]="['fas', 'expand']" class="img-icon"></fa-icon>
             </figure>
           </div>
         </div>
@@ -66,32 +86,72 @@
         <!-- images -->
         <div class="columns is-mobile is-gapless">
           <div class="column">
-            <figure class="image is-5by3 project-image">
-              <img src="../../../assets/images/projects/air-p1.jpeg" alt="Image of Air KOALAty Report" class="rounded-corners">
+            <!-- air koalaty image modal 1 -->
+            <div class="modal" [class.is-active]="showModal['air1']">
+              <div class="modal-background" (click)="toggleModal('air1')"></div>
+              <div class="modal-content modal-resize">
+                <img src="../../../assets/images/projects/air-p1.jpeg" alt="Image of air-koalaty-report" class="modal-img">
+              </div>
+              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('air1')"></button>
+            </div>
+            <!-- air koalaty img 1 -->
+            <figure class="image is-5by3 project-image" (click)="toggleModal('air1')">
+              <img src="../../../assets/images/projects/air-p1.jpeg" alt="Image of Air KOALAty Report" class="base-img">
+              <fa-icon [icon]="['fas', 'expand']" class="img-icon"></fa-icon>
             </figure>
           </div>
           <div class="column">
-            <figure class="image is-5by3 project-image">
-              <img src="../../../assets/images/projects/air-p2.jpeg" alt="Image of Air KOALAty Report" class="rounded-corners">
+            <!-- air koalaty image modal 2 -->
+            <div class="modal" [class.is-active]="showModal['air2']">
+              <div class="modal-background" (click)="toggleModal('air2')"></div>
+              <div class="modal-content modal-resize">
+                <img src="../../../assets/images/projects/air-p2.jpeg" alt="Image of air-koalaty-report" class="modal-img">
+              </div>
+              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('air2')"></button>
+            </div>
+            <!-- air koalaty img 2 -->
+            <figure class="image is-5by3 project-image" (click)="toggleModal('air2')">
+              <img src="../../../assets/images/projects/air-p2.jpeg" alt="Image of Air KOALAty Report" class="base-img">
+              <fa-icon [icon]="['fas', 'expand']" class="img-icon"></fa-icon>
             </figure>
           </div>
         </div>
         <div class="columns is-mobile is-gapless">
           <div class="column">
-            <figure class="image is-5by3 project-image">
-              <img src="../../../assets/images/projects/air-p3.jpeg" alt="Image of Air KOALAty Report" class="rounded-corners">
+            <!-- air koalaty image modal 3 -->
+            <div class="modal" [class.is-active]="showModal['air3']">
+              <div class="modal-background" (click)="toggleModal('air3')"></div>
+              <div class="modal-content modal-resize">
+                <img src="../../../assets/images/projects/air-p3.jpeg" alt="Image of air-koalaty-report" class="modal-img">
+              </div>
+              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('air3')"></button>
+            </div>
+            <!-- air koalaty img 3 -->
+            <figure class="image is-5by3 project-image" (click)="toggleModal('air3')">
+              <img src="../../../assets/images/projects/air-p3.jpeg" alt="Image of Air KOALAty Report" class="base-img">
+              <fa-icon [icon]="['fas', 'expand']" class="air3-img-icon"></fa-icon>
             </figure>
           </div>
           <div class="column">
-            <figure class="image is-5by3 project-image">
-              <img src="../../../assets/images/projects/air-p4.jpeg" alt="Image of Air KOALAty Report" class="rounded-corners">
+            <!-- air koalaty image modal 4 -->
+            <div class="modal" [class.is-active]="showModal['air4']">
+              <div class="modal-background" (click)="toggleModal('air4')"></div>
+              <div class="modal-content modal-resize">
+                <img src="../../../assets/images/projects/air-p4.jpeg" alt="Image of air-koalaty-report" class="modal-img">
+              </div>
+              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('air4')"></button>
+            </div>
+            <!-- air koalaty img 4 -->
+            <figure class="image is-5by3 project-image" (click)="toggleModal('air4')">
+              <img src="../../../assets/images/projects/air-p4.jpeg" alt="Image of Air KOALAty Report" class="base-img">
+              <fa-icon [icon]="['fas', 'expand']" class="img-icon"></fa-icon>
             </figure>
           </div>
         </div>
         <!-- buttons -->
         <div class="button-container">
           <a class="button is-medium is-rounded" href="https://airkoalatyreport.herokuapp.com/" target="_blank">
-            <fa-icon [icon]="['fas', 'external-link-alt']" size="xs"></fa-icon> Live
+            <fa-icon [icon]="['fas', 'external-link-alt']" size="xs"></fa-icon> Site
           </a>
           <a class="button is-medium is-rounded" href="https://github.com/Dnel9281/air-koalaty-report" target="_blank">
             <fa-icon [icon]="['fab', 'github']" size="xs"></fa-icon> Code
@@ -126,32 +186,72 @@
         <!-- images -->
         <div class="columns is-mobile is-gapless">
           <div class="column">
-            <figure class="image is-5by3 project-image">
-              <img src="../../../assets/images/projects/poke-survey-p1.jpeg" alt="Image of Air KOALAty Report" class="rounded-corners">
+            <!-- poke-survey image modal 1 -->
+            <div class="modal" [class.is-active]="showModal['poke1']">
+              <div class="modal-background" (click)="toggleModal('poke1')"></div>
+              <div class="modal-content modal-resize">
+                <img src="../../../assets/images/projects/poke-survey-p1.jpeg" alt="Image of air-koalaty-report" class="modal-img">
+              </div>
+              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('poke1')"></button>
+            </div>
+            <!-- poke-survey img 1 -->
+            <figure class="image is-5by3 project-image" (click)="toggleModal('poke1')">
+              <img src="../../../assets/images/projects/poke-survey-p1.jpeg" alt="Image of Air KOALAty Report" class="base-img">
+              <fa-icon [icon]="['fas', 'expand']" class="img-icon"></fa-icon>
             </figure>
           </div>
           <div class="column">
-            <figure class="image is-5by3 project-image">
-              <img src="../../../assets/images/projects/poke-survey-p2.jpeg" alt="Image of Air KOALAty Report" class="rounded-corners">
+            <!-- poke-survey image modal 2 -->
+            <div class="modal" [class.is-active]="showModal['poke2']">
+              <div class="modal-background" (click)="toggleModal('poke2')"></div>
+              <div class="modal-content modal-resize">
+                <img src="../../../assets/images/projects/poke-survey-p2.jpeg" alt="Image of air-koalaty-report" class="modal-img">
+              </div>
+              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('poke2')"></button>
+            </div>
+            <!-- poke-survey img 2 -->
+            <figure class="image is-5by3 project-image" (click)="toggleModal('poke2')">
+              <img src="../../../assets/images/projects/poke-survey-p2.jpeg" alt="Image of Air KOALAty Report" class="base-img">
+              <fa-icon [icon]="['fas', 'expand']" class="img-icon"></fa-icon>
             </figure>
           </div>
         </div>
         <div class="columns is-mobile is-gapless">
           <div class="column">
-            <figure class="image is-5by3 project-image">
-              <img src="../../../assets/images/projects/poke-survey-p3.jpeg" alt="Image of Air KOALAty Report" class="rounded-corners">
+            <!-- poke-survey image modal 3 -->
+            <div class="modal" [class.is-active]="showModal['poke3']">
+              <div class="modal-background" (click)="toggleModal('poke3')"></div>
+              <div class="modal-content modal-resize">
+                <img src="../../../assets/images/projects/poke-survey-p3.jpeg" alt="Image of air-koalaty-report" class="modal-img">
+              </div>
+              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('poke3')"></button>
+            </div>
+            <!-- poke-survey img 3 -->
+            <figure class="image is-5by3 project-image" (click)="toggleModal('poke3')">
+              <img src="../../../assets/images/projects/poke-survey-p3.jpeg" alt="Image of Air KOALAty Report" class="base-img">
+              <fa-icon [icon]="['fas', 'expand']" class="img-icon"></fa-icon>
             </figure>
           </div>
           <div class="column">
-            <figure class="image is-5by3 project-image">
-              <img src="../../../assets/images/projects/poke-survey-p4.jpeg" alt="Image of Air KOALAty Report" class="rounded-corners">
+            <!-- poke-survey image modal 4 -->
+            <div class="modal" [class.is-active]="showModal['poke4']">
+              <div class="modal-background" (click)="toggleModal('poke4')"></div>
+              <div class="modal-content modal-resize">
+                <img src="../../../assets/images/projects/poke-survey-p4.jpeg" alt="Image of air-koalaty-report" class="modal-img">
+              </div>
+              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('poke4')"></button>
+            </div>
+            <!-- poke-survey img 4 -->
+            <figure class="image is-5by3 project-image" (click)="toggleModal('poke4')">
+              <img src="../../../assets/images/projects/poke-survey-p4.jpeg" alt="Image of Air KOALAty Report" class="base-img">
+              <fa-icon [icon]="['fas', 'expand']" class="img-icon"></fa-icon>
             </figure>
           </div>
         </div>
         <!-- buttons -->
         <div class="button-container">
           <a class="button is-medium is-rounded" href="https://poke-survey.herokuapp.com/" target="_blank">
-            <fa-icon [icon]="['fas', 'external-link-alt']" size="xs"></fa-icon> Live
+            <fa-icon [icon]="['fas', 'external-link-alt']" size="xs"></fa-icon> Site
           </a>
           <a class="button is-medium is-rounded" href="https://github.com/Dnel9281/poke-survey" target="_blank">
             <fa-icon [icon]="['fab', 'github']" size="xs"></fa-icon> Code

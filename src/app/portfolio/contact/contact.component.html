@@ -43,32 +43,42 @@
 <section class="section">
   <div class="container">
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate class="field contact-form">
-      <label class="label">
+      <label class="label" for="name">
         Your Name:
         <div class="control has-icons-left">
-          <input class="input is-rounded" type="text" formControlName="name" placeholder="John Smith">
+          <input class="input is-rounded" type="text" id="name" formControlName="name" placeholder="John Smith">
           <span class="icon is-left">
             <fa-icon [icon]="['fas', 'user']"></fa-icon>
           </span>
         </div>
       </label>
     
-      <label class="label">
+      <label class="label" for="email">
         Your Email:
         <div class="control has-icons-left">
-          <input class="input is-rounded" type="email" formControlName="email"  placeholder="abc@email.com">
+          <input class="input is-rounded" type="email" id="email" formControlName="email"  placeholder="abc@email.com">
           <span class="icon is-left">
             <fa-icon [icon]="['fas', 'envelope']"></fa-icon>
           </span>
         </div>
       </label>
     
-      <label class="label">
+      <label class="label" for="message">
         Your Message:
         <div class="control">
-          <textarea class="textarea" placeholder="Hello, World!" formControlName="message"></textarea>
+          <textarea class="textarea" id="message" placeholder="Hello, World!" formControlName="message"></textarea>
         </div>
       </label>
+
+      <div class="notification is-success" *ngIf="success">
+        <button class="delete" (click)="deleteNotification()"></button>
+        {{success}}
+      </div>
+
+      <div class="notification is-danger" *ngIf="error">
+        <button class="delete" (click)="deleteNotification()"></button>
+        {{error}}
+      </div>
     
       <div class="control">
         <button class="button is-rounded" type="submit" [disabled]="!contactForm.valid">

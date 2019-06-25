@@ -4,6 +4,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const helmet = require('helmet');
+const routes = require('./api/api');
 
 // Force SSL
 const forceSSL = function() {
@@ -24,6 +25,9 @@ app.use(helmet());
 if (process.env.NODE_ENV !== 'dev') {
   app.use(forceSSL());
 }
+
+// Routes
+app.use(routes);
 
 // Set static path to Angular app in dist
 if (process.env.NODE_ENV !== 'dev') {
