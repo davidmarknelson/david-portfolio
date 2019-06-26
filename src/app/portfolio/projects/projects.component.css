@@ -19,11 +19,6 @@ h1, h2, p, strong {
   margin-bottom: 30px;
 }
 
-/* Projects section */
-section {
-  margin-bottom: 75px;
-}
-
 /* Images */
 .project-image {
   margin: 0 3px;
@@ -116,8 +111,6 @@ fa-icon {
 
 .modal-img {
   max-height: calc(100vh - 50px);
+  max-width: 1200px;
+  border-radius: 10px;
 }
-
-/* .test {
-  transition: flex 300ms ease-out;
-} */

@@ -6,42 +6,9 @@
   </div>
 </section>
 
-<section class="contact-group section">
-  <div class="container">
-    <h1 class="title">Contact me by...</h1>
-    <div class="columns">
-      <div class="column">
-        <h3 class="subtitle">email</h3>
-        <a href='mailto:nelsondavidmark@gmail.com'  class="contact-icons" target="_blank">
-          <fa-icon [icon]="['fas', 'envelope']" size="3x"></fa-icon>
-        </a>
-      </div>
-      <div class="column">
-        <h3 class="subtitle">Github</h3>
-        <a href='https://github.com/dnel9281' class="contact-icons" target="_blank">
-          <fa-icon [icon]="['fab', 'github-square']" size="3x"></fa-icon>
-        </a>
-      </div>
-      <div class="column">
-        <h3 class="subtitle">Linkedin</h3>
-        <a href='https://www.linkedin.com/in/david-nelson-dnel9281' class="contact-icons" target="_blank">
-          <fa-icon [icon]="['fab', 'linkedin']" size="3x"></fa-icon>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="section">
   <div class="container">
-    <h1 class="or-line">
-      <span class="or-text">or</span>
-    </h1>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
+    <h1 class="title has-text-centered">Contact me</h1>
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate class="field contact-form">
       <label class="label" for="name">
         Your Name:
@@ -70,12 +37,12 @@
         </div>
       </label>
 
-      <div class="notification is-success" *ngIf="success">
+      <div class="notification success-notification" *ngIf="success">
         <button class="delete" (click)="deleteNotification()"></button>
         {{success}}
       </div>
 
-      <div class="notification is-danger" *ngIf="error">
+      <div class="notification error-notification" *ngIf="error">
         <button class="delete" (click)="deleteNotification()"></button>
         {{error}}
       </div>
@@ -87,5 +54,39 @@
         </button>
       </div>
     </form>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h1 class="or-line">
+      <span class="or-text">or</span>
+    </h1>
+  </div>
+</section>
+
+<section class="contact-group section">
+  <div class="container">
+    <h1 class="title">Contact me by...</h1>
+    <div class="columns">
+      <div class="column">
+        <h3 class="subtitle">email</h3>
+        <a href='mailto:nelsondavidmark@gmail.com'  class="contact-icons" target="_blank">
+          <fa-icon [icon]="['fas', 'envelope']" size="3x"></fa-icon>
+        </a>
+      </div>
+      <div class="column">
+        <h3 class="subtitle">Github</h3>
+        <a href='https://github.com/dnel9281' class="contact-icons" target="_blank">
+          <fa-icon [icon]="['fab', 'github-square']" size="3x"></fa-icon>
+        </a>
+      </div>
+      <div class="column">
+        <h3 class="subtitle">Linkedin</h3>
+        <a href='https://www.linkedin.com/in/david-nelson-dnel9281' class="contact-icons" target="_blank">
+          <fa-icon [icon]="['fab', 'linkedin']" size="3x"></fa-icon>
+        </a>
+      </div>
+    </div>
   </div>
 </section>

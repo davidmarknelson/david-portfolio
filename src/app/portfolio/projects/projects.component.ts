@@ -24,11 +24,11 @@ export class ProjectsComponent implements OnInit {
   ngOnInit() {
   }
 
-  toggleModal(num) {
-    if (this.showModal[num]) {
-      this.showModal[num] = false;
+  toggleModal(pic) {
+    if (this.showModal[pic]) {
+      this.showModal[pic] = false;
      } else {
-      this.showModal[num] = true;
+      this.showModal[pic] = true;
      }
   }
 }

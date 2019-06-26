@@ -1,5 +1,5 @@
 /* Text styles */
-h3, label {
+h1, h3, label {
   color: #09204A;
 }
 
@@ -33,21 +33,6 @@ h3, label {
   text-align: center;
 }
 
-/* Contact icons and text */
-.contact-group {
-  text-align: center;
-}
-
-.contact-icons {
-  color: #77dd77;
-  transition: background-color 200ms ease-out;
-  transition: color 200ms ease-out;
-}
-
-.contact-icons:hover {
-color: #32C832;
-}
-
 /* Contact form */
 .contact-form {
   max-width: 700px;
@@ -55,14 +40,21 @@ color: #32C832;
   margin-right: auto;
 }
 
-form {
-  margin-bottom: 150px;
-}
-
 textarea {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+}
+
+/* Notifications */
+.success-notification {
+  background: #77dd77;
+  color: #09204A;
+}
+
+.error-notification {
+  background: #f39191;
+  color: #09204A;
 }
 
 /* Contact form buttons */
@@ -90,4 +82,21 @@ textarea {
 
 .icon-plane {
   margin-left: 5px;
+}
+
+/* Contact icons and text */
+.contact-group {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 150px auto;
+}
+
+.contact-icons {
+  color: #77dd77;
+  transition: background-color 200ms ease-out;
+  transition: color 200ms ease-out;
+}
+
+.contact-icons:hover {
+color: #32C832;
 }
