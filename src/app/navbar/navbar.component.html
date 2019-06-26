@@ -5,7 +5,7 @@
     </a>
 
     <a role="button" class="navbar-burger burger nav-link" aria-label="menu" 
-        aria-expanded="false" data-target="navbarItems" 
+        aria-expanded="false" data-test="navbarItems" 
         (click)='expandMenu()' [class.is-active]='expandedMenu'>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -15,15 +15,15 @@
 
   <div id="navbarItems" class="navbar-menu" [class.is-active]='expandedMenu' [class.nav-background]='expandedMenu'>
     <div class="navbar-start">
-      <a class="navbar-item nav-link" data-target="projects" (click)="scrollToElement('#projects')">
+      <a class="navbar-item nav-link" data-test="projects" (click)="scrollToElement('#projects')">
         Projects
       </a>
 
-      <a class="navbar-item nav-link" data-target="skills" (click)="scrollToElement('#skills')">
+      <a class="navbar-item nav-link" data-test="skills" (click)="scrollToElement('#skills')">
         Skills
       </a>
 
-      <a class="navbar-item nav-link" data-target="contact" (click)="scrollToElement('#contact')">
+      <a class="navbar-item nav-link" data-test="contact" (click)="scrollToElement('#contact')">
         Contact
       </a>
 

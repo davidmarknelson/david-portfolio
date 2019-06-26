@@ -32,7 +32,7 @@ describe('NavbarComponent', () => {
   });
 
   it('should change expandedMenu property to be true when hamburger is clicked for mobile', () => {
-    const hamburger = fixture.debugElement.query(By.css('[data-target=navbarItems]'));
+    const hamburger = fixture.debugElement.query(By.css('[data-test=navbarItems]'));
     spyOn(component, 'expandMenu').and.callFake(() => {
       expandedMenu = !expandedMenu;
     });
@@ -47,7 +47,7 @@ describe('NavbarComponent', () => {
   });
 
   it('should open the menu for mobile when the hamburger is clicked', () => {
-    const hamburger = fixture.debugElement.query(By.css('[data-target=navbarItems]'));
+    const hamburger = fixture.debugElement.query(By.css('[data-test=navbarItems]'));
     hamburger.nativeElement.click();
     fixture.detectChanges();
     const navbarItems = fixture.debugElement.query(By.css('#navbarItems'));
@@ -60,7 +60,7 @@ describe('NavbarComponent', () => {
   });
 
   it('should add the background on navbarItems when the menu is opened on mobile', () => {
-    const hamburger = fixture.debugElement.query(By.css('[data-target=navbarItems]'));
+    const hamburger = fixture.debugElement.query(By.css('[data-test=navbarItems]'));
     hamburger.nativeElement.click();
     fixture.detectChanges();
     const navbarItems = fixture.debugElement.query(By.css('#navbarItems'));
@@ -68,7 +68,7 @@ describe('NavbarComponent', () => {
   });
 
   it('should call function that scrolls to the projects section when link is clicked', () => {
-    const projectsBtn = fixture.debugElement.query(By.css('[data-target=projects]'));
+    const projectsBtn = fixture.debugElement.query(By.css('[data-test=projects]'));
     spyOn(component, 'scrollToElement').and.callFake(() => {});
     projectsBtn.nativeElement.click();
     fixture.detectChanges();
@@ -76,7 +76,7 @@ describe('NavbarComponent', () => {
   });
 
   it('should call function that scrolls to the skills section when link is clicked', () => {
-    const projectsBtn = fixture.debugElement.query(By.css('[data-target=skills]'));
+    const projectsBtn = fixture.debugElement.query(By.css('[data-test=skills]'));
     spyOn(component, 'scrollToElement').and.callFake(() => {});
     projectsBtn.nativeElement.click();
     fixture.detectChanges();
@@ -84,7 +84,7 @@ describe('NavbarComponent', () => {
   });
 
   it('should call function that scrolls to the contact section when link is clicked', () => {
-    const projectsBtn = fixture.debugElement.query(By.css('[data-target=contact]'));
+    const projectsBtn = fixture.debugElement.query(By.css('[data-test=contact]'));
     spyOn(component, 'scrollToElement').and.callFake(() => {});
     projectsBtn.nativeElement.click();
     fixture.detectChanges();
