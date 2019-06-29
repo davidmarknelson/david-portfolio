@@ -10,6 +10,7 @@ export class ContactComponent implements OnInit {
   contactForm: FormGroup;
   error: string;
   success: string;
+  sending: boolean;
 
   constructor(private fb: FormBuilder, private contactService: ContactService) { }
 
@@ -20,15 +21,15 @@ export class ContactComponent implements OnInit {
   createForm() {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
-      email: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required]
     });
   }
 
   onSubmit() {
-    this.error = '';
     this.success = '';
-
+    this.error = '';
+    this.sending = true;
     const contactInfo = {
       name: this.contactForm.value.name,
       email: this.contactForm.value.email,
@@ -38,9 +39,10 @@ export class ContactComponent implements OnInit {
     this.contactService.sendMessage(contactInfo).subscribe(res => {
       this.contactForm.reset();
       this.success = res.message;
+      this.sending = false;
     }, err => {
-      this.contactForm.reset();
-      this.error = err.error.message;
+      this.error = err.error.message || 'There was an error. Please try again later.';
+      this.sending = false;
     })
   }
 

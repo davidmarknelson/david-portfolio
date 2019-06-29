@@ -50,11 +50,13 @@ textarea {
 .success-notification {
   background: #77dd77;
   color: #09204A;
+  border-radius: 10px;
 }
 
 .error-notification {
   background: #f39191;
   color: #09204A;
+  border-radius: 10px;
 }
 
 /* Contact form buttons */

@@ -48,7 +48,11 @@
       </div>
     
       <div class="control">
-        <button class="button is-rounded" type="submit" [disabled]="!contactForm.valid">
+        <button class="button is-rounded" 
+          type="submit" 
+          data-test='submit-button' 
+          [disabled]="!contactForm.valid"
+          [class.is-loading]='sending'>
           Send Message
           <fa-icon [icon]="['fas', 'paper-plane']" size="xs" class="icon-plane"></fa-icon>
         </button>

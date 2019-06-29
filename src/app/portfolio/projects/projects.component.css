@@ -23,7 +23,7 @@ h1, h2, p, strong {
 .project-image {
   margin: 0 3px;
   border-radius: 10px;
-  transition: color 200ms ease-out;
+  transition: color 200ms ease;
 }
 
 .project-image:hover {
@@ -37,10 +37,18 @@ h1, h2, p, strong {
 
 .base-img {
   border-radius: 10px;
-  transition: filter 200ms ease-out;
+  transition: filter 200ms ease;
+  transition: opacity 200ms ease;
+  transition: box-shadow 200ms ease;
+  -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
 }
 
-.base-img:hover {
+.project-image:hover .base-img {
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.5);
   filter: grayscale(100%);
 }
 
@@ -72,12 +80,16 @@ h1, h2, p, strong {
   -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
   box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
-  transition: background-color 200ms ease-out;
-  transition: color 200ms ease-out;
+  transition: background-color 200ms ease;
+  transition: color 200ms ease;
+  transition: box-shadow 200ms ease;
 }
 
 .button:hover {
   background-color: #32C832;
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.5);
 }
 
 fa-icon {
@@ -110,7 +122,18 @@ fa-icon {
 }
 
 .modal-img {
+  height: auto;
   max-height: calc(100vh - 50px);
-  max-width: 1200px;
+  max-width: 100%;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-resize {
+    margin: 0;
+  }
+
+  .modal-img {
+    border-radius: 0;
+  }
 }
