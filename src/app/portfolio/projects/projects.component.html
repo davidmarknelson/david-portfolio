@@ -11,7 +11,7 @@
   <div class="container project-body">
     <h1 class="title title-margin">Portfolio Website</h1>
     <h2 class="subtitle">
-      This portfolio was made to show off my projects while practicing testing.
+      This portfolio was made with <strong>Bulma</strong> to show off my projects while practicing testing.
     </h2>
     <div class="columns project-body-margin">
       <div class="column">
@@ -22,13 +22,13 @@
             <div class="modal" [class.is-active]="showModal['portfolio1']" data-test="portfolio1Modal">
               <div class="modal-background" (click)="toggleModal('portfolio1')"></div>
               <div class="modal-content modal-resize">
-                <img src="../../../assets/images/test.png" alt="Image of air-koalaty-report" class="modal-img">
+                <img src="../../../assets/images/projects/portfolio-p1.jpeg" alt="Image of air-koalaty-report" class="modal-img">
               </div>
-              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('portfolio1')"></button>
+              <button class="modal-close is-large" aria-label="close" data-test="portfolio1ModalX" (click)="toggleModal('portfolio1')"></button>
             </div>
             <!-- portfolio image 1 -->
             <figure class="image is-5by3 project-image" (click)="toggleModal('portfolio1')" data-test="portfolio1Figure">
-              <img src="../../../assets/images/test.png" alt="Image of Air KOALAty Report" class="base-img">
+              <img src="../../../assets/images/projects/portfolio-p1.jpeg" alt="Image of Air KOALAty Report" class="base-img">
               <fa-icon [icon]="['fas', 'expand']" class="img-icon"></fa-icon>
             </figure>
           </div>
@@ -39,7 +39,7 @@
               <div class="modal-content modal-resize">
                 <img src="../../../assets/images/test.png" alt="Image of air-koalaty-report" class="modal-img">
               </div>
-              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('portfolio2')"></button>
+              <button class="modal-close is-large" aria-label="close" data-test="portfolio2ModalX" (click)="toggleModal('portfolio2')"></button>
             </div>
             <!-- portfolio image 2 -->
             <figure class="image is-5by3 project-image" (click)="toggleModal('portfolio2')" data-test="portfolio2Figure">
@@ -92,7 +92,7 @@
               <div class="modal-content modal-resize">
                 <img src="../../../assets/images/projects/air-p1.jpeg" alt="Image of air-koalaty-report" class="modal-img">
               </div>
-              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('air1')"></button>
+              <button class="modal-close is-large" aria-label="close" data-test="air1ModalX" (click)="toggleModal('air1')"></button>
             </div>
             <!-- air koalaty img 1 -->
             <figure class="image is-5by3 project-image" (click)="toggleModal('air1')" data-test="air1Figure">
@@ -107,7 +107,7 @@
               <div class="modal-content modal-resize">
                 <img src="../../../assets/images/projects/air-p2.jpeg" alt="Image of air-koalaty-report" class="modal-img">
               </div>
-              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('air2')"></button>
+              <button class="modal-close is-large" aria-label="close" data-test="air2ModalX" (click)="toggleModal('air2')"></button>
             </div>
             <!-- air koalaty img 2 -->
             <figure class="image is-5by3 project-image" (click)="toggleModal('air2')" data-test="air2Figure">
@@ -124,7 +124,7 @@
               <div class="modal-content modal-resize">
                 <img src="../../../assets/images/projects/air-p3.jpeg" alt="Image of air-koalaty-report" class="modal-img">
               </div>
-              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('air3')"></button>
+              <button class="modal-close is-large" aria-label="close" data-test="air3ModalX" (click)="toggleModal('air3')"></button>
             </div>
             <!-- air koalaty img 3 -->
             <figure class="image is-5by3 project-image" (click)="toggleModal('air3')" data-test="air3Figure">
@@ -139,7 +139,7 @@
               <div class="modal-content modal-resize">
                 <img src="../../../assets/images/projects/air-p4.jpeg" alt="Image of air-koalaty-report" class="modal-img">
               </div>
-              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('air4')"></button>
+              <button class="modal-close is-large" aria-label="close" data-test="air4ModalX" (click)="toggleModal('air4')"></button>
             </div>
             <!-- air koalaty img 4 -->
             <figure class="image is-5by3 project-image" (click)="toggleModal('air4')" data-test="air4Figure">
@@ -192,7 +192,7 @@
               <div class="modal-content modal-resize">
                 <img src="../../../assets/images/projects/poke-survey-p1.jpeg" alt="Image of air-koalaty-report" class="modal-img">
               </div>
-              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('poke1')"></button>
+              <button class="modal-close is-large" aria-label="close" data-test="poke1ModalX" (click)="toggleModal('poke1')"></button>
             </div>
             <!-- poke-survey img 1 -->
             <figure class="image is-5by3 project-image" (click)="toggleModal('poke1')" data-test="poke1Figure">
@@ -207,7 +207,7 @@
               <div class="modal-content modal-resize">
                 <img src="../../../assets/images/projects/poke-survey-p2.jpeg" alt="Image of air-koalaty-report" class="modal-img">
               </div>
-              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('poke2')"></button>
+              <button class="modal-close is-large" aria-label="close" data-test="poke2ModalX" (click)="toggleModal('poke2')"></button>
             </div>
             <!-- poke-survey img 2 -->
             <figure class="image is-5by3 project-image" (click)="toggleModal('poke2')" data-test="poke2Figure">
@@ -224,7 +224,7 @@
               <div class="modal-content modal-resize">
                 <img src="../../../assets/images/projects/poke-survey-p3.jpeg" alt="Image of air-koalaty-report" class="modal-img">
               </div>
-              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('poke3')"></button>
+              <button class="modal-close is-large" aria-label="close" data-test="poke3ModalX" (click)="toggleModal('poke3')"></button>
             </div>
             <!-- poke-survey img 3 -->
             <figure class="image is-5by3 project-image" (click)="toggleModal('poke3')" data-test="poke3Figure">
@@ -239,7 +239,7 @@
               <div class="modal-content modal-resize">
                 <img src="../../../assets/images/projects/poke-survey-p4.jpeg" alt="Image of air-koalaty-report" class="modal-img">
               </div>
-              <button class="modal-close is-large" aria-label="close" (click)="toggleModal('poke4')"></button>
+              <button class="modal-close is-large" aria-label="close" data-test="poke4ModalX" (click)="toggleModal('poke4')"></button>
             </div>
             <!-- poke-survey img 4 -->
             <figure class="image is-5by3 project-image" (click)="toggleModal('poke4')" data-test="poke4Figure">
