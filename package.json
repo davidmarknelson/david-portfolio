@@ -1,10 +1,14 @@
 {
   "name": "david-portfolio",
   "version": "0.0.0",
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.4.1"
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node server.js",
+    "build": "ng build --aot --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -12,6 +16,8 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "~8.0.1",
+    "@angular/compiler-cli": "~8.0.0",
     "@angular/animations": "~8.0.0",
     "@angular/common": "~8.0.0",
     "@angular/compiler": "~8.0.0",
