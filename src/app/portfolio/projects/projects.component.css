@@ -23,10 +23,17 @@ h1, h2, p, strong {
 .project-image {
   margin: 0 3px;
   border-radius: 10px;
-  transition: color 200ms ease;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
+  transition: box-shadow .5s;
 }
 
 .project-image:hover {
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.5);
   cursor: pointer;
 }
 
@@ -37,19 +44,14 @@ h1, h2, p, strong {
 
 .base-img {
   border-radius: 10px;
-  transition: filter 200ms ease;
-  transition: opacity 200ms ease;
-  transition: box-shadow 200ms ease;
-  -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
-  box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
+  transition: transform .5s,
+    box-shadow .5s,
+    filter .5s;
 }
 
 .project-image:hover .base-img {
-  -webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.5);
-  box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.5);
   filter: grayscale(100%);
+  transform: scale(1.25);
 }
 
 .img-icon {
@@ -57,6 +59,7 @@ h1, h2, p, strong {
   color: #09204A;
   bottom: 3px;
   right: 3px;
+  transition: color 200ms;
 }
 
 .air3-img-icon {
@@ -80,9 +83,9 @@ h1, h2, p, strong {
   -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
   box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
-  transition: background-color 200ms ease;
-  transition: color 200ms ease;
-  transition: box-shadow 200ms ease;
+  transition: background-color 200ms,
+    color 200ms,
+    box-shadow 200ms;
 }
 
 .button:hover {
@@ -126,6 +129,21 @@ fa-icon {
   max-height: calc(100vh - 50px);
   max-width: 100%;
   border-radius: 10px;
+  transition: opacity .5s;
+}
+
+.modal-background {
+  cursor: pointer;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: .3s;
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 @media screen and (max-width: 768px) {
