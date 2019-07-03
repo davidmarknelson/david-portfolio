@@ -20,7 +20,7 @@ router.post('/api/contact', middleware.message, middleware.mailOptions, (req, re
 
   transporter.sendMail(res.locals.mailOptions)
     .then(info => {
-      res.status(200).json({ message: 'Your message has successfully been sent!' });
+      res.status(200).json({ message: 'Your message was successfully sent!' });
     })
     .catch(error => {
       console.error(error);

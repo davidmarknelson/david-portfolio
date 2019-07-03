@@ -126,7 +126,7 @@ describe('ContactComponent', () => {
 
     it('should show a success notification message when the form successfully submits', () => {
       spyOn(contactService, 'sendMessage').and.callFake(() => {
-        return of({message: 'Your message has successfully been sent!'});
+        return of({message: 'Your message was successfully sent!'});
       });
 
       fillForm();
@@ -137,7 +137,7 @@ describe('ContactComponent', () => {
       const errorNotification: DebugElement = fixture.debugElement.query(By.css('.error-notification'));
       // There is a space before and after the toEqual message because the enter white space in the HTML are 
       // counted as spaces for some reason.
-      expect(successNotification.nativeElement.textContent).toEqual(' Your message has successfully been sent! ');
+      expect(successNotification.nativeElement.textContent).toEqual(' Your message was successfully sent! ');
       expect(errorNotification).toBeFalsy();
     });
 
@@ -145,7 +145,7 @@ describe('ContactComponent', () => {
       spyOn(contactService, 'sendMessage').and.callFake(() => {
         return throwError({ 
           error: { 
-            message: 'There was an error sending your message. Please try again later.'
+            message: 'There was an error sending your message. Please try again later or use the options below.'
           } 
         });
       });
@@ -157,7 +157,7 @@ describe('ContactComponent', () => {
       const successNotification: DebugElement = fixture.debugElement.query(By.css('.success-notification'));
       const errorNotification: DebugElement = fixture.debugElement.query(By.css('.error-notification'));
       // The spacing in the toEqual is the same as the success test
-      expect(errorNotification.nativeElement.textContent).toEqual(' There was an error sending your message. Please try again later. ');
+      expect(errorNotification.nativeElement.textContent).toEqual(' There was an error sending your message. Please try again later or use the options below. ');
       expect(successNotification).toBeFalsy();
     });
   });

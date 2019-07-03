@@ -16,7 +16,7 @@ describe('Contact form', () => {
 
     cy
       .get('.success-notification')
-      .should('contain', 'Your message has successfully been sent!')
+      .should('contain', 'Your message was successfully sent!')
   });
 
   it('should show a specific error notification if the backend does not send an error message with an error', () => {
@@ -49,7 +49,7 @@ describe('Contact form', () => {
     });
 
     cy.route('/api/contact', {
-      message: 'There was an error sending your message. Please try again later.'
+      message: 'There was an error sending your message. Please try again later or use the options below.'
     });
 
     cy
@@ -60,6 +60,6 @@ describe('Contact form', () => {
 
     cy
       .get('.error-notification')
-      .should('contain', 'There was an error sending your message. Please try again later.')
+      .should('contain', 'There was an error sending your message. Please try again later or use the options below.')
   });
 });
