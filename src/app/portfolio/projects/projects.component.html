@@ -8,15 +8,15 @@
 
 <!-- Portfolio -->
 <section class="section">
-  <div class="container project-body">
+  <div class="container project-body portfolio-background">
     <h1 class="title title-margin">Portfolio Website</h1>
-    <h2 class="subtitle">
-      This portfolio was made with <strong>Bulma</strong> to show off my projects while practicing testing.
+    <h2 class="subtitle subtitle-margin">
+      This portfolio was made with <strong>Bulma</strong> to show off projects while practicing testing with <strong>Jasmine</strong>, and <strong>Cypress</strong>.
     </h2>
     <div class="columns project-body-margin">
       <div class="column">
         <!-- images -->
-        <div class="columns is-mobile is-gapless">
+        <div class="columns is-mobile">
           <div class="column">
             <!-- portfolio image modal 1 -->
             <div class="modal" [class.is-active]="showModal['portfolio1']" data-test="portfolio1Modal">
@@ -66,17 +66,17 @@
         <p class="subtitle">
           <strong>Testing</strong>
           <br>
-          This site has passing unit and integrated tests using <strong>Jasmine</strong> and <strong>Cypress</strong>.
+          This site has passing unit and E2E tests using <strong>Jasmine</strong> and <strong>Cypress</strong>.
         </p>
         <p class="subtitle">
           <strong>Accessibility</strong>
           <br>
-          The color on this site passess web accessibility tests. It also has alt properties for images, aria labels, and descriptive link labels.
+          The color on this site passess web accessibility tests and has descriptiive alt properties for images.
         </p>
         <p class="subtitle">
           <strong>Backend</strong>
           <br>
-          The backend uses <strong>Nodemailer</strong> and <strong>Express</strong> to send the message from the contact form.
+          The backend uses <strong>Nodemailer</strong>, <strong>Express</strong>, and <strong>Sendgrid</strong> to send the message from the contact form.
         </p>
       </div>
     </div>
@@ -85,12 +85,15 @@
 
 <!-- Air KOALAty Report -->
 <section class="section">
-  <div class="container project-body">
+  <div class="container project-body air-background">
     <h1 class="title title-margin">Air KOALAty Report</h1>
+    <h2 class="subtitle subtitle-margin">
+      A place to find the air quality and weather of cities made with <strong>Angular 7</strong>, <strong>Express</strong>, <strong>MongoDB</strong>, and <strong>Auth0</strong>.
+    </h2>
     <div class="columns project-body-margin">
       <div class="column">
         <!-- images -->
-        <div class="columns is-mobile is-gapless">
+        <div class="columns is-mobile">
           <div class="column">
             <!-- air koalaty image modal 1 -->
             <div class="modal" [class.is-active]="showModal['air1']" data-test="air1Modal">
@@ -128,7 +131,7 @@
             </figure>
           </div>
         </div>
-        <div class="columns is-mobile is-gapless">
+        <div class="columns is-mobile">
           <div class="column">
             <!-- air koalaty image modal 3 -->
             <div class="modal" [class.is-active]="showModal['air3']" data-test="air3Modal">
@@ -179,16 +182,24 @@
       <!-- info -->
       <div class="column">
         <p class="subtitle">
-          <strong>Auth0</strong> A simple container to divide your page into sections, like the one you're currently reading
+          <strong>Auth0</strong>
+          <br>
+          Authorization to save your list of favorite cities uses <strong>Auth0</strong>.
         </p>
         <p class="subtitle">
-          <strong>Angular Material</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, minima quibusdam ipsum eligendi temporibus corporis deserunt vel magnam, obcaecati, cupiditate commodi sit sunt molestias a! Quam dolorum architecto quod asperiores?
+          <strong>Angular Material</strong>
+          <br>
+          <strong>Angular Material</strong> is used for styling the website.
         </p>
         <p class="subtitle">
-          <strong>Api</strong> A simple container to divide your page into sections, like the one you're currently reading
+          <strong>Api</strong>
+          <br>
+          The api is from <strong>Air Visual</strong> and provides the weather and air quality index for different cities.
         </p>
         <p class="subtitle">
-          <strong>Backend</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, minima quibusdam ipsum eligendi temporibus corporis deserunt vel magnam, obcaecati, cupiditate commodi sit sunt molestias a! Quam dolorum architecto quod asperiores?
+          <strong>Back end</strong>
+          <br>
+          The back end uses <strong>Express</strong>, <strong>Mongoose</strong>, and <strong>MongoDB</strong> to send requests to the API and to update the user's list.
         </p>
       </div>
     </div>
@@ -197,12 +208,15 @@
 
 <!-- Poke-Survey -->
 <section class="section">
-  <div class="container project-body">
+  <div class="container project-body poke-background">
     <h1 class="title title-margin">Poke-Survey</h1>
+    <h2 class="subtitle subtitle-margin">
+      A website to vote for your favorite Pokemon made with <strong>Express</strong>, <strong>MongoDB</strong>, and <strong>Mongoose</strong>.
+    </h2>
     <div class="columns project-body-margin">
       <div class="column">
         <!-- images -->
-        <div class="columns is-mobile is-gapless">
+        <div class="columns is-mobile">
           <div class="column">
             <!-- poke-survey image modal 1 -->
             <div class="modal" [class.is-active]="showModal['poke1']" data-test="poke1Modal">
@@ -240,7 +254,7 @@
             </figure>
           </div>
         </div>
-        <div class="columns is-mobile is-gapless">
+        <div class="columns is-mobile">
           <div class="column">
             <!-- poke-survey image modal 3 -->
             <div class="modal" [class.is-active]="showModal['poke3']" data-test="poke3Modal">
@@ -291,16 +305,24 @@
       <!-- info -->
       <div class="column">
         <p class="subtitle">
-          <strong>Testing</strong> A simple container to divide your page into sections, like the one you're currently reading
+          <strong>Voting</strong>
+          <br>
+          <strong>Mongoose</strong> and <strong>MongoDB</strong> store the votes.
         </p>
         <p class="subtitle">
-          <strong>Testing</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, minima quibusdam ipsum eligendi temporibus corporis deserunt vel magnam, obcaecati, cupiditate commodi sit sunt molestias a! Quam dolorum architecto quod asperiores?
+          <strong>Updating Votes</strong>
+          <br>
+          The back end creates a hash unique to each user's browser to show the user's previous votes and to let them update their votes.
         </p>
         <p class="subtitle">
-          <strong>Testing</strong> A simple container to divide your page into sections, like the one you're currently reading
+          <strong>View</strong>
+          <br>
+          <strong>EJS</strong> is used for the template and to loop through the data to show the images and voting results.
         </p>
         <p class="subtitle">
-          <strong>Testing</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, minima quibusdam ipsum eligendi temporibus corporis deserunt vel magnam, obcaecati, cupiditate commodi sit sunt molestias a! Quam dolorum architecto quod asperiores?
+          <strong>Styling</strong>
+          <br>
+          <strong>Bootstrap</strong> is used to style the website and display the results with small bar charts.
         </p>
       </div>
     </div>

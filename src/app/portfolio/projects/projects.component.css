@@ -21,7 +21,6 @@ h1, h2, p, strong {
 
 /* Images */
 .project-image {
-  margin: 0 3px;
   border-radius: 10px;
   overflow: hidden;
   -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
@@ -101,7 +100,6 @@ fa-icon {
 
 /* Projects background, border, spacing, and shadow */
 .project-body {
-  background-color: #f4f4f4;
   border-radius: 10px;
   padding: 10px;
   -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
@@ -109,12 +107,29 @@ fa-icon {
   box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
 }
 
+.portfolio-background {
+  background: linear-gradient(rgba(107, 217, 235, 0.3), rgba(89, 161, 224, 0.3));
+}
+
+.air-background {
+  background: linear-gradient(rgba(89, 161, 224, 0.3), rgba(70, 104, 213, 0.3));
+}
+
+.poke-background {
+  background: linear-gradient(rgba(70, 104, 213, 0.3), rgba(53, 51, 203, 0.3));
+}
+
 .title-margin {
-  margin-top: 24px;
+  margin-top: 34px;
+  margin-bottom: 45px;
+}
+
+.subtitle-margin {
+  margin-bottom: 45px;
 }
 
 .project-body-margin {
-  margin-bottom: 12px;
+  margin-bottom: 27px;
 }
 
 /* Modal styles */

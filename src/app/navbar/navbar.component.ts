@@ -22,4 +22,5 @@ export class NavbarComponent implements OnInit {
     let element = document.querySelector(id);
     element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
+
 }
