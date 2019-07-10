@@ -1,18 +1,22 @@
-# DavidPortfolio
+# David Nelson's Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
+Visit the website of this project [here](https://www.davidmarknelson.com/)
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+Run `npm run api-dev` for the api to send the message from the contact form.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Environment variables
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`NODE_ENV` is set to `development` or `production`.  
+`PORT` is set to a port you specify.  
+`SG_API_KEY` is your Sendgrid api key you can get for free.  
+`SG_PW` is your Sendgrid accound password.  
+`SG_USER` is your Sendgrid username.  
+`SMTP` is your SMTP mail address. Sendgrid uses `smtp.sendgrid.net`  
+`EMAIL` is the email address you want the messages from the contact form to be sent to.
 
 ## Running unit tests
 
@@ -20,8 +24,4 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Use Cypress to run the end-to-end tests in the `cypress/integration/` directory.
