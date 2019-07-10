@@ -1,13 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
   font-family: "audiowide";
-  src: url("./assets/fonts/audiowide.ttf") format('ttf'),
-    url("./assets/fonts/audiowide.woff") format('woff'),
-    url("./assets/fonts/audiowide.woff2") format('woff2');
+  src: url("./assets/fonts/audiowide.woff2") format('woff2'),
+    url("./assets/fonts/audiowide.woff") format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 .font-audiowide {
-  font-family: 'audiowide', Helvetica, sans-serif;
+  font-family: 'audiowide', cursive;
 }
