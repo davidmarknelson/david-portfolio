@@ -1,6 +1,6 @@
 # David Nelson's Portfolio
 
-Visit the website of this project [here](https://www.davidmarknelson.com/)
+Visit the website of this project at https://davidnelsoncodes.herokuapp.com/
 
 ## Development server
 
